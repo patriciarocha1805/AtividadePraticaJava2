@@ -24,13 +24,20 @@ public class SwitchExercicio4 {
 		case 2:
 			System.out.println("Digite o valor que deseja sacar: ");
 			saque = leia.nextFloat();
+			
+			if (saque > saldo) {
+				System.out.println("Saldo Insuficiente!");
+			} else {
 			novoSaldo = saldo - saque;
+			System.out.println("Seu novo saldo é: " + novoSaldo);
+			}
 			break;
 			
 		case 3:
 			System.out.println("Digite o valor que deseja depositar: ");
 			deposito = leia.nextFloat();
 			novoSaldo = saldo + deposito;
+			System.out.println("Seu novo saldo é: " + novoSaldo);
 			break;
 			
 		default:
