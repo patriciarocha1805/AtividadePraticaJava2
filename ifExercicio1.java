@@ -1,0 +1,41 @@
+package atividadePraticaJava2;
+
+import java.util.Scanner;
+
+public class ifExercicio1 {
+
+	public static void main(String[] args) {
+		
+		Scanner leia = new Scanner (System.in);
+		
+		int numA, numB, numC, soma;
+		
+		System.out.println("Digite o número A: ");
+		numA = leia.nextInt();
+		
+		System.out.println("Digite o número B: ");
+		numB = leia.nextInt();
+		
+		System.out.println("Digite o número C: ");
+		numC = leia.nextInt();
+		
+		soma = numA + numB;
+		
+		if (soma > numC) {
+			System.out.println(numB + " + " + numA + " = "  + soma + " > " + numC);
+			System.out.println("A Soma de A + B é Maior do que C");
+			
+		}else if (soma < numC) {
+			System.out.println(numB + " + " + numA + " = "  + soma + " < " + numC);
+			System.out.println("A Soma de A + B é Menor do que C");
+		}
+		
+		else {
+			System.out.println(numB + " + " + numA + " = "  + soma + " = " + numC);
+			System.out.println("A Soma de A + B é Igual a C");
+		}
+		
+
+	}
+
+}
